@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DownloadsController">
+            <connections>
+                <outlet property="window" destination="1" id="ADc-iW-9cJ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Share App" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="1237" y="455" width="375" height="299"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QbX-2n-fzZ">
+                        <rect key="frame" x="18" y="228" width="339" height="51"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Love this app? Let others know how amazing it is. Click one of the buttons below to share it via that network." id="BUx-vq-nJ6">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OO1-92-xh1">
+                        <rect key="frame" x="20" y="128" width="93" height="80"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="twitterbig" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="M70-PL-lue">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="twitter:" target="-2" id="gSt-IY-2TJ"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OUz-J1-vpx">
+                        <rect key="frame" x="30" y="22" width="72" height="77"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Google 2015" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="0OQ-k8-vLm">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="google:" target="-2" id="hjc-ei-bni"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2t-Xy-K5f">
+                        <rect key="frame" x="209" y="109" width="166" height="128"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="facebook-icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="0as-pi-9XF">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="facebook:" target="-2" id="sZ1-jz-BgU"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7P-aI-Yd9">
+                        <rect key="frame" x="230" y="22" width="125" height="100"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="MacMail Icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="25R-ff-Mib">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="email:" target="-2" id="cAz-Id-CYW"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="334.5" y="385.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Google 2015" width="256" height="256"/>
+        <image name="MacMail Icon" width="150" height="150"/>
+        <image name="facebook-icon" width="612" height="792"/>
+        <image name="twitterbig" width="1024" height="1024"/>
+    </resources>
+</document>

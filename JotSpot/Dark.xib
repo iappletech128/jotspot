@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DarkController">
+            <connections>
+                <outlet property="titleTextField" destination="qQY-eB-xIx" id="Gmd-t2-jBi"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="5Ne-2z-Kfu"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="New Document" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="443"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="480" height="270"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="443"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="ggA-tb-qnV">
+                        <rect key="frame" x="20" y="20" width="446" height="324"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <clipView key="contentView" id="DjW-WD-loT">
+                            <rect key="frame" x="1" y="1" width="429" height="322"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView placeholderIntrinsicWidth="423" placeholderIntrinsicHeight="318" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="1A4-78-0rd">
+                                    <rect key="frame" x="0.0" y="0.0" width="429" height="322"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="429" height="322"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="429" height="322"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <contentFilters>
+                            <ciFilter name="CIFalseColor">
+                                <configuration>
+                                    <ciColor key="inputColor0" red="0.0" green="0.0" blue="0.0" alpha="1"/>
+                                    <ciColor key="inputColor1" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1"/>
+                                    <null key="inputImage"/>
+                                </configuration>
+                            </ciFilter>
+                        </contentFilters>
+                        <animations/>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Zj4-kc-qxC">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cd7-ua-w0l">
+                            <rect key="frame" x="430" y="1" width="15" height="322"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                    </scrollView>
+                    <button toolTip="Undo" id="yZF-JQ-fk9">
+                        <rect key="frame" x="24" y="388" width="42" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="undo" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="RC5-0L-rsf">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="undo:" target="-1" id="C4h-lK-Nyg"/>
+                        </connections>
+                    </button>
+                    <button toolTip="Save" id="IJF-jH-Z1p">
+                        <rect key="frame" x="73" y="388" width="42" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Save" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="XUn-Kj-uMv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button toolTip="Select all text" verticalHuggingPriority="750" id="2RZ-Xr-DXZ">
+                        <rect key="frame" x="379" y="395" width="74" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="inline" title="Select All" bezelStyle="inline" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lag-Vs-ayp">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="selectAll:" target="-1" id="9at-tC-bby"/>
+                        </connections>
+                    </button>
+                    <button toolTip="Copy" id="bD7-JV-S4O">
+                        <rect key="frame" x="181" y="388" width="42" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="copy" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="SSr-2H-uFi">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="copy:" target="-1" id="CDS-da-OYY"/>
+                        </connections>
+                    </button>
+                    <button toolTip="Paste" id="mHy-CC-INJ">
+                        <rect key="frame" x="233" y="388" width="42" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Paste-icon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="lI3-Vd-6b6">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="paste:" target="-1" id="qPR-AE-cM8"/>
+                        </connections>
+                    </button>
+                    <button toolTip="Open" id="Wd1-xi-RCe">
+                        <rect key="frame" x="114" y="378" width="69" height="55"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="open" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="5zE-Xc-Upc">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button id="gr9-7y-Oo0">
+                        <rect key="frame" x="325" y="385" width="44" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Printer" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="qXz-AP-hk0">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="print:" target="-1" id="o7h-zm-FAX"/>
+                        </connections>
+                    </button>
+                    <button toolTip="Cut" id="wmG-ZM-bfQ">
+                        <rect key="frame" x="278" y="388" width="42" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Cut-icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="bcR-eY-Bmf">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cut:" target="-1" id="cAE-SW-BDz"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="qQY-eB-xIx">
+                        <rect key="frame" x="20" y="355" width="311" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <contentFilters>
+                            <ciFilter name="CIFalseColor">
+                                <configuration>
+                                    <ciColor key="inputColor0" red="0.0" green="0.0" blue="0.0" alpha="1"/>
+                                    <ciColor key="inputColor1" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1"/>
+                                    <null key="inputImage"/>
+                                </configuration>
+                            </ciFilter>
+                        </contentFilters>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="New Document" placeholderString="" drawsBackground="YES" id="rCY-VZ-tf8">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="c6H-Yj-bPU">
+                        <rect key="frame" x="333" y="349" width="139" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <contentFilters>
+                            <ciFilter name="CIFalseColor">
+                                <configuration>
+                                    <ciColor key="inputColor0" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1"/>
+                                    <ciColor key="inputColor1" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1"/>
+                                    <null key="inputImage"/>
+                                </configuration>
+                            </ciFilter>
+                        </contentFilters>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Name Document" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FW5-SS-F5v">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="selectAll:" target="-1" id="iLs-96-stb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <shadow key="shadow" blurRadius="15">
+                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </shadow>
+                <animations/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="C624F2FE-EAF3-4209-ADC3-5572FDAA4756" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="xLz-Bc-O8c">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="3Ze-JE-eIT"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="7p6-mV-rWz"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="7MD-aj-erN"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="yU6-wA-msY"/>
+                    <toolbarItem implicitItemIdentifier="C3A9B363-291A-45EB-8B48-4DD6CB6D5FF8" label="Share" paletteLabel="Share App" tag="-1" image="Share App" id="Ycv-Nx-aN4">
+                        <connections>
+                            <action selector="showDownloads:" target="7Za-vT-QgX" id="4db-jw-rc7"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="4BCF8A70-6603-4162-9BDB-451ECF51DD51" label="Help" paletteLabel="Help" tag="-1" image="Help Icon" id="DJW-ZV-eDI">
+                        <connections>
+                            <action selector="showHelp:" target="fhk-d9-5kf" id="yAo-rc-C0Z"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="3Ze-JE-eIT"/>
+                    <toolbarItem reference="7p6-mV-rWz"/>
+                    <toolbarItem reference="yU6-wA-msY"/>
+                    <toolbarItem reference="Ycv-Nx-aN4"/>
+                    <toolbarItem reference="DJW-ZV-eDI"/>
+                </defaultToolbarItems>
+            </toolbar>
+        </window>
+        <customObject id="fhk-d9-5kf" customClass="PageController"/>
+        <customObject id="7Za-vT-QgX" customClass="AppController"/>
+    </objects>
+    <resources>
+        <image name="Cut-icon" width="256" height="256"/>
+        <image name="Help Icon" width="75" height="73.349998474121094"/>
+        <image name="Paste-icon" width="128" height="128"/>
+        <image name="Printer" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="Save" width="618" height="640"/>
+        <image name="Share App" width="40.069564819335938" height="40.069564819335938"/>
+        <image name="copy" width="614" height="640"/>
+        <image name="open" width="128" height="128"/>
+        <image name="undo" width="20.803611755371094" height="20.803611755371094"/>
+    </resources>
+</document>

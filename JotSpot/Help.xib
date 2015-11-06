@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HelpController">
+            <connections>
+                <outlet property="window" destination="1" id="XKI-zA-LlN"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Help" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="750" height="530"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="750" height="530"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DyG-7r-DqP">
+                        <rect key="frame" x="64" y="20" width="392" height="22"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Got more questions? For more FAQ visit our site or email us." id="lWG-4Y-Br3">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLV-3O-W1d">
+                        <rect key="frame" x="469" y="14" width="82" height="32"/>
+                        <buttonCell key="cell" type="push" title="FAQ" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4dg-dT-e1G">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Site:" target="-1" id="6L8-jm-d8c"/>
+                        </connections>
+                    </button>
+                    <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlT-9n-Lcd">
+                        <rect key="frame" x="13" y="46" width="724" height="478"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="Basics" identifier="1" id="eal-yy-XTE">
+                                <view key="view" id="mso-rY-xPL">
+                                    <rect key="frame" x="10" y="33" width="141" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xVM-ci-fYH">
+                                            <rect key="frame" x="-26" y="-131" width="183" height="125"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="116 Menu" id="zv2-p4-G8w"/>
+                                        </imageView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="inm-vj-3zv">
+                                            <rect key="frame" x="534" y="-234" width="155" height="76"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Changing Font: Highlight the text and click the font button in the menu bar." id="Ss0-TW-JN7">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSl-3r-lRu">
+                                            <rect key="frame" x="-68" y="-422" width="440" height="256"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Tool bar" id="DUZ-9l-xKY"/>
+                                        </imageView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oja-Qi-iEc">
+                                            <rect key="frame" x="464" y="-107" width="235" height="59"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Changing Text Color: Highlight the text and click the text color button in the menu bar." id="04N-Ka-PBN">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6J-GL-xdg">
+                                            <rect key="frame" x="324" y="-360" width="197" height="132"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="6KV-d0-1J0">
+                                                <font key="font" metaFont="system"/>
+                                                <string key="title">Editing Toolbar: Right click on the toolbar and select Customize Toolbar or go to JotSpot &gt; Preferences &gt; Customize Toolbar. You can drag items up to the toolbar to drag in the default one. </string>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8z5-nG-oXO">
+                                            <rect key="frame" x="132" y="-137" width="312" height="118"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="6It-n0-A04">
+                                                <font key="font" metaFont="system"/>
+                                                <string key="title">Did you see the little pen in your menu bar? That's JotSpot and from there you can quickly open another file (⌘O), save a document (⌘S), and quit JotSpot.
+You can also jot down some quick notes right from the menu icon!</string>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Questions" identifier="2" id="ROX-W8-08A">
+                                <view key="view" ambiguous="YES" id="Qob-me-Mic">
+                                    <rect key="frame" x="10" y="33" width="704" height="432"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JhI-3f-Ymr">
+                                            <rect key="frame" x="15" y="21" width="674" height="391"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="X7M-kQ-kgw">
+                                                <font key="font" metaFont="system"/>
+                                                <mutableString key="title">Q: How do I save my notes?
+A: Click the save button in the toolbar of the app. Or you can go to File &gt; Save. From there you can view the instructions on how to save notes.
+
+Q: Is there a way to get my notes back if I closed out the window?
+A: ONLY if you closed the window and did not quit the app will you be able to get your notes back. You can do this by going to the menu bar and clicking File &gt; New.
+
+Q: How do I share my notes?
+A: Highlight all of your text (or the part you want to share) and right click. Hover over “Share” and select the method you want to share by.
+
+Q: How do I show the dock icon?
+A: In the file you downloaded to hide the icon there was another file to show the icon. There is instructions on how to do that there.
+
+Q: What is the area that says “Name Document”?
+A: In there is where you enter the name of your document. Doing that will change the title of the window. If you don’t want to have a name for the document you can just leave it blank.
+
+Q: When I enter the name of the document nothing happens.
+A: Once you enter the name of the document you will need to click the “Name Document” button to the right of the text field. That will change the name of the document. </mutableString>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyb-16-FrI">
+                        <rect key="frame" x="574" y="14" width="82" height="32"/>
+                        <buttonCell key="cell" type="push" title="Email" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UYs-Hl-g3W">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Email:" target="-1" id="lUw-rM-KAi"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+    <resources>
+        <image name="116 Menu" width="249" height="357"/>
+        <image name="Tool bar" width="649" height="632"/>
+    </resources>
+</document>

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120841D21ADCA51100C3598A /* Help.xib in Resources */ = {isa = PBXBuildFile; fileRef = 120841D11ADCA51100C3598A /* Help.xib */; };
+		12196D771BEC46080082059E /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12196D761BEC46080082059E /* WindowController.m */; };
+		12196D7B1BEC46380082059E /* SaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12196D7A1BEC46380082059E /* SaveController.m */; };
+		12196D7D1BEC46430082059E /* Save.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12196D7C1BEC46430082059E /* Save.xib */; };
+		1229508C1B743D5100952E68 /* Paddle-MAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1229508B1B743D5100952E68 /* Paddle-MAS.framework */; };
+		1229508E1B743D5E00952E68 /* Paddle-MAS.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1229508B1B743D5100952E68 /* Paddle-MAS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1237CC211B69A0FA000EA2C7 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1237CC201B69A0FA000EA2C7 /* icon.icns */; };
+		12737F271BAF7138005B5942 /* Dark.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12737F261BAF7138005B5942 /* Dark.xib */; };
+		12737F2D1BAF7165005B5942 /* ThingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12737F2C1BAF7165005B5942 /* ThingController.m */; };
+		12737F301BAF71A7005B5942 /* DarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12737F2F1BAF71A7005B5942 /* DarkController.m */; };
+		9880C00B183AF04300B515A0 /* Quit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9880C00A183AF04300B515A0 /* Quit.xib */; };
+		9880C00E183AF14100B515A0 /* QuitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9880C00D183AF14100B515A0 /* QuitController.m */; };
+		9880C011183AF17100B515A0 /* QuitDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9880C010183AF17100B515A0 /* QuitDelegate.m */; };
+		98817DB618287F0D00CC13E0 /* HelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98817DB518287F0D00CC13E0 /* HelpController.m */; };
+		98817DB918287F2C00CC13E0 /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98817DB818287F2C00CC13E0 /* PageController.m */; };
 		98C8CD011823462B00AE3F4E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C8CD001823462B00AE3F4E /* Cocoa.framework */; };
 		98C8CD0B1823462B00AE3F4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98C8CD091823462B00AE3F4E /* InfoPlist.strings */; };
 		98C8CD0D1823462B00AE3F4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C8CD0C1823462B00AE3F4E /* main.m */; };
@@ -18,6 +33,9 @@
 		98C8CD211823462B00AE3F4E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C8CD001823462B00AE3F4E /* Cocoa.framework */; };
 		98C8CD291823462B00AE3F4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98C8CD271823462B00AE3F4E /* InfoPlist.strings */; };
 		98C8CD2B1823462B00AE3F4E /* JotSpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C8CD2A1823462B00AE3F4E /* JotSpotTests.m */; };
+		98C8CD351823468F00AE3F4E /* Downloads.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C8CD341823468F00AE3F4E /* Downloads.xib */; };
+		98C8CD381823469B00AE3F4E /* DownloadsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C8CD371823469B00AE3F4E /* DownloadsController.m */; };
+		98C8CD3B182346A800AE3F4E /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C8CD3A182346A800AE3F4E /* AppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +48,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1229508D1B743D5800952E68 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1229508E1B743D5E00952E68 /* Paddle-MAS.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		120841D11ADCA51100C3598A /* Help.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Help.xib; sourceTree = "<group>"; };
+		12196D751BEC46080082059E /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		12196D761BEC46080082059E /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		12196D791BEC46380082059E /* SaveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveController.h; sourceTree = "<group>"; };
+		12196D7A1BEC46380082059E /* SaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveController.m; sourceTree = "<group>"; };
+		12196D7C1BEC46430082059E /* Save.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Save.xib; sourceTree = "<group>"; };
+		1229508B1B743D5100952E68 /* Paddle-MAS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Paddle-MAS.framework"; sourceTree = "<group>"; };
+		1237CC201B69A0FA000EA2C7 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		125E1C681B6176B700F951A7 /* JotSpot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = JotSpot.entitlements; sourceTree = "<group>"; };
+		12737F261BAF7138005B5942 /* Dark.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dark.xib; sourceTree = "<group>"; };
+		12737F2B1BAF7165005B5942 /* ThingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThingController.h; sourceTree = "<group>"; };
+		12737F2C1BAF7165005B5942 /* ThingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThingController.m; sourceTree = "<group>"; };
+		12737F2E1BAF71A7005B5942 /* DarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkController.h; sourceTree = "<group>"; };
+		12737F2F1BAF71A7005B5942 /* DarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkController.m; sourceTree = "<group>"; };
+		9880C00A183AF04300B515A0 /* Quit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Quit.xib; sourceTree = "<group>"; };
+		9880C00C183AF14100B515A0 /* QuitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuitController.h; sourceTree = "<group>"; };
+		9880C00D183AF14100B515A0 /* QuitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitController.m; sourceTree = "<group>"; };
+		9880C00F183AF17100B515A0 /* QuitDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuitDelegate.h; sourceTree = "<group>"; };
+		9880C010183AF17100B515A0 /* QuitDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitDelegate.m; sourceTree = "<group>"; };
+		98817DB418287F0D00CC13E0 /* HelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpController.h; sourceTree = "<group>"; };
+		98817DB518287F0D00CC13E0 /* HelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpController.m; sourceTree = "<group>"; };
+		98817DB718287F2C00CC13E0 /* PageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
+		98817DB818287F2C00CC13E0 /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
 		98C8CCFD1823462B00AE3F4E /* JotSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JotSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C8CD001823462B00AE3F4E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		98C8CD031823462B00AE3F4E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +104,11 @@
 		98C8CD261823462B00AE3F4E /* JotSpotTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JotSpotTests-Info.plist"; sourceTree = "<group>"; };
 		98C8CD281823462B00AE3F4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98C8CD2A1823462B00AE3F4E /* JotSpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JotSpotTests.m; sourceTree = "<group>"; };
+		98C8CD341823468F00AE3F4E /* Downloads.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Downloads.xib; sourceTree = "<group>"; };
+		98C8CD361823469B00AE3F4E /* DownloadsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadsController.h; sourceTree = "<group>"; };
+		98C8CD371823469B00AE3F4E /* DownloadsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadsController.m; sourceTree = "<group>"; };
+		98C8CD39182346A800AE3F4E /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		98C8CD3A182346A800AE3F4E /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1229508C1B743D5100952E68 /* Paddle-MAS.framework in Frameworks */,
 				98C8CD011823462B00AE3F4E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +133,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12196D781BEC46210082059E /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				12196D751BEC46080082059E /* WindowController.h */,
+				12196D761BEC46080082059E /* WindowController.m */,
+				12196D7C1BEC46430082059E /* Save.xib */,
+				12196D791BEC46380082059E /* SaveController.h */,
+				12196D7A1BEC46380082059E /* SaveController.m */,
+			);
+			name = Save;
+			sourceTree = "<group>";
+		};
+		12737F1E1BAF6F13005B5942 /* Dark Mode */ = {
+			isa = PBXGroup;
+			children = (
+				12737F2B1BAF7165005B5942 /* ThingController.h */,
+				12737F2C1BAF7165005B5942 /* ThingController.m */,
+				12737F261BAF7138005B5942 /* Dark.xib */,
+				12737F2E1BAF71A7005B5942 /* DarkController.h */,
+				12737F2F1BAF71A7005B5942 /* DarkController.m */,
+			);
+			name = "Dark Mode";
+			sourceTree = "<group>";
+		};
+		9880C012183AF50D00B515A0 /* Quit */ = {
+			isa = PBXGroup;
+			children = (
+				9880C00A183AF04300B515A0 /* Quit.xib */,
+				9880C00F183AF17100B515A0 /* QuitDelegate.h */,
+				9880C010183AF17100B515A0 /* QuitDelegate.m */,
+				9880C00C183AF14100B515A0 /* QuitController.h */,
+				9880C00D183AF14100B515A0 /* QuitController.m */,
+			);
+			name = Quit;
+			sourceTree = "<group>";
+		};
+		9880C013183AF55100B515A0 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				120841D11ADCA51100C3598A /* Help.xib */,
+				98817DB718287F2C00CC13E0 /* PageController.h */,
+				98817DB818287F2C00CC13E0 /* PageController.m */,
+				98817DB418287F0D00CC13E0 /* HelpController.h */,
+				98817DB518287F0D00CC13E0 /* HelpController.m */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		9880C014183AF59200B515A0 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				98C8CD341823468F00AE3F4E /* Downloads.xib */,
+				98C8CD39182346A800AE3F4E /* AppController.h */,
+				98C8CD3A182346A800AE3F4E /* AppController.m */,
+				98C8CD361823469B00AE3F4E /* DownloadsController.h */,
+				98C8CD371823469B00AE3F4E /* DownloadsController.m */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
 		98C8CCF41823462B00AE3F4E = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +215,7 @@
 		98C8CCFF1823462B00AE3F4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1229508B1B743D5100952E68 /* Paddle-MAS.framework */,
 				98C8CD001823462B00AE3F4E /* Cocoa.framework */,
 				98C8CD1F1823462B00AE3F4E /* XCTest.framework */,
 				98C8CD021823462B00AE3F4E /* Other Frameworks */,
@@ -115,9 +236,15 @@
 		98C8CD061823462B00AE3F4E /* JotSpot */ = {
 			isa = PBXGroup;
 			children = (
+				125E1C681B6176B700F951A7 /* JotSpot.entitlements */,
 				98C8CD121823462B00AE3F4E /* AppDelegate.h */,
 				98C8CD131823462B00AE3F4E /* AppDelegate.m */,
 				98C8CD151823462B00AE3F4E /* MainMenu.xib */,
+				12196D781BEC46210082059E /* Save */,
+				12737F1E1BAF6F13005B5942 /* Dark Mode */,
+				9880C013183AF55100B515A0 /* Help */,
+				9880C012183AF50D00B515A0 /* Quit */,
+				9880C014183AF59200B515A0 /* Share */,
 				98C8CD181823462B00AE3F4E /* Images.xcassets */,
 				98C8CD071823462B00AE3F4E /* Supporting Files */,
 			);
@@ -127,6 +254,7 @@
 		98C8CD071823462B00AE3F4E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1237CC201B69A0FA000EA2C7 /* icon.icns */,
 				98C8CD081823462B00AE3F4E /* JotSpot-Info.plist */,
 				98C8CD091823462B00AE3F4E /* InfoPlist.strings */,
 				98C8CD0C1823462B00AE3F4E /* main.m */,
@@ -164,6 +292,7 @@
 				98C8CCF91823462B00AE3F4E /* Sources */,
 				98C8CCFA1823462B00AE3F4E /* Frameworks */,
 				98C8CCFB1823462B00AE3F4E /* Resources */,
+				1229508D1B743D5800952E68 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -201,6 +330,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = iappletech128;
 				TargetAttributes = {
+					98C8CCFC1823462B00AE3F4E = {
+						DevelopmentTeam = BNSAEM3BUR;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					98C8CD1D1823462B00AE3F4E = {
 						TestTargetID = 98C8CCFC1823462B00AE3F4E;
 					};
@@ -230,9 +367,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9880C00B183AF04300B515A0 /* Quit.xib in Resources */,
 				98C8CD0B1823462B00AE3F4E /* InfoPlist.strings in Resources */,
+				120841D21ADCA51100C3598A /* Help.xib in Resources */,
 				98C8CD191823462B00AE3F4E /* Images.xcassets in Resources */,
+				12737F271BAF7138005B5942 /* Dark.xib in Resources */,
 				98C8CD111823462B00AE3F4E /* Credits.rtf in Resources */,
+				12196D7D1BEC46430082059E /* Save.xib in Resources */,
+				1237CC211B69A0FA000EA2C7 /* icon.icns in Resources */,
+				98C8CD351823468F00AE3F4E /* Downloads.xib in Resources */,
 				98C8CD171823462B00AE3F4E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +396,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C8CD141823462B00AE3F4E /* AppDelegate.m in Sources */,
+				12737F301BAF71A7005B5942 /* DarkController.m in Sources */,
+				98817DB618287F0D00CC13E0 /* HelpController.m in Sources */,
+				12737F2D1BAF7165005B5942 /* ThingController.m in Sources */,
+				98817DB918287F2C00CC13E0 /* PageController.m in Sources */,
 				98C8CD0D1823462B00AE3F4E /* main.m in Sources */,
+				9880C00E183AF14100B515A0 /* QuitController.m in Sources */,
+				12196D771BEC46080082059E /* WindowController.m in Sources */,
+				98C8CD381823469B00AE3F4E /* DownloadsController.m in Sources */,
+				98C8CD3B182346A800AE3F4E /* AppController.m in Sources */,
+				12196D7B1BEC46380082059E /* SaveController.m in Sources */,
+				9880C011183AF17100B515A0 /* QuitDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -374,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -383,10 +536,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JotSpot/JotSpot.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDK-Mac",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JotSpot/JotSpot-Prefix.pch";
 				INFOPLIST_FILE = "JotSpot/JotSpot-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,10 +557,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JotSpot/JotSpot.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDK-Mac",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JotSpot/JotSpot-Prefix.pch";
 				INFOPLIST_FILE = "JotSpot/JotSpot-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +633,7 @@
 				98C8CD301823462B00AE3F4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98C8CD311823462B00AE3F4E /* Build configuration list for PBXNativeTarget "JotSpotTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +642,7 @@
 				98C8CD331823462B00AE3F4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
