@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PrefController">
+            <connections>
+                <outlet property="window" destination="QvC-M9-y7g" id="Kkq-lS-YFa"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="444" y="753" width="213" height="202"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="202"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PED-7Z-m6h">
+                        <rect key="frame" x="54" y="117" width="105" height="18"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="Open at login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="WEY-dO-u24">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Preferences:" target="LqW-7H-QKM" id="dyf-eb-Q7D"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ly-h6-uWU">
+                        <rect key="frame" x="61" y="151" width="90" height="18"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="Dark Mode" bezelStyle="regularSquare" imagePosition="left" inset="2" id="pEu-1B-WVX">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showDark:" target="v2i-3M-BLf" id="ArA-BC-uou"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87y-xQ-MQD">
+                        <rect key="frame" x="40" y="69" width="133" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Hide dock icon" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="66q-k6-h9u">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="bm4-hZ-HFg" id="zce-5e-YqH"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vtE-JO-wYa">
+                        <rect key="frame" x="28" y="28" width="156" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Change menu icon" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u3I-b4-Ils">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="g8r-CB-ofY" id="Ao0-gv-1CW"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+            </view>
+            <point key="canvasLocation" x="235.5" y="180"/>
+        </window>
+        <customObject id="LqW-7H-QKM" customClass="AppDelegate"/>
+        <customObject id="v2i-3M-BLf" customClass="ThingController"/>
+        <window title="WARNING" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="bm4-hZ-HFg" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="213" y="11119" width="480" height="114"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="wFp-Hi-htw">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-pK-khJ">
+                        <rect key="frame" x="18" y="49" width="444" height="44"/>
+                        <animations/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="a2x-SE-2Hq">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Are you sure you want to do this? You will not be able to access anything in the top left menu bar until you show the icon again.</string>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XIl-wA-cau">
+                        <rect key="frame" x="60" y="13" width="82" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vgx-El-NZo">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="performClose:" target="-1" id="bJo-uV-cFP"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4l-9t-2ws">
+                        <rect key="frame" x="331" y="13" width="91" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cGp-uw-BJN">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Preferences:" target="LqW-7H-QKM" id="SXs-h8-8qr"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+            </view>
+            <point key="canvasLocation" x="369" y="435"/>
+        </window>
+        <window title="Change Menu Icon" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="g8r-CB-ofY">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="339" y="634" width="480" height="179"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="SPx-Ig-xSz">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="179"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-mw-sPQ">
+                        <rect key="frame" x="18" y="20" width="444" height="139"/>
+                        <animations/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="ba3-63-TRX">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Have you noticed the pen icon in the top menu bar of you Mac? Just follow the steps below to change it.
+1. Find an image (better if it has a transparent background)
+2. Go to Finder &gt; Go &gt; Go to folder
+3. Enter this address (only works if JotSpot is in the "Applications" folder): /Applications/JotSpot.app/Contents/Resources
+4. Name your image "pen.png"
+5. Drag your image into the "Resources" folder and click "Replace".</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <animations/>
+            </view>
+            <point key="canvasLocation" x="369" y="686.5"/>
+        </window>
+    </objects>
+</document>

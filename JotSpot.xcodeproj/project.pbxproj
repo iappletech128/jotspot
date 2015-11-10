@@ -17,6 +17,15 @@
 		12737F271BAF7138005B5942 /* Dark.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12737F261BAF7138005B5942 /* Dark.xib */; };
 		12737F2D1BAF7165005B5942 /* ThingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12737F2C1BAF7165005B5942 /* ThingController.m */; };
 		12737F301BAF71A7005B5942 /* DarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12737F2F1BAF71A7005B5942 /* DarkController.m */; };
+		127AA36A1BF1878D00E5A6D9 /* OpenDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 127AA3691BF1878D00E5A6D9 /* OpenDelegate.m */; };
+		127AA36E1BF187A500E5A6D9 /* OpenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127AA36D1BF187A500E5A6D9 /* OpenController.m */; };
+		127AA3701BF187AF00E5A6D9 /* Open.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127AA36F1BF187AF00E5A6D9 /* Open.xib */; };
+		127AA3721BF1895E00E5A6D9 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127AA3711BF1895E00E5A6D9 /* Preferences.xib */; };
+		127AA3761BF1898A00E5A6D9 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127AA3751BF1898A00E5A6D9 /* PrefController.m */; };
+		127AA3791BF1899900E5A6D9 /* PrefDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 127AA3781BF1899900E5A6D9 /* PrefDelegate.m */; };
+		127AA37C1BF18CCB00E5A6D9 /* ReleaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 127AA37B1BF18CCB00E5A6D9 /* ReleaseDelegate.m */; };
+		127AA3801BF18CE600E5A6D9 /* ReleaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127AA37F1BF18CE600E5A6D9 /* ReleaseController.m */; };
+		127AA3821BF18CF200E5A6D9 /* Release Notes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127AA3811BF18CF200E5A6D9 /* Release Notes.xib */; };
 		9880C00B183AF04300B515A0 /* Quit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9880C00A183AF04300B515A0 /* Quit.xib */; };
 		9880C00E183AF14100B515A0 /* QuitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9880C00D183AF14100B515A0 /* QuitController.m */; };
 		9880C011183AF17100B515A0 /* QuitDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9880C010183AF17100B515A0 /* QuitDelegate.m */; };
@@ -76,6 +85,21 @@
 		12737F2C1BAF7165005B5942 /* ThingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThingController.m; sourceTree = "<group>"; };
 		12737F2E1BAF71A7005B5942 /* DarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkController.h; sourceTree = "<group>"; };
 		12737F2F1BAF71A7005B5942 /* DarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkController.m; sourceTree = "<group>"; };
+		127AA3681BF1878D00E5A6D9 /* OpenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenDelegate.h; sourceTree = "<group>"; };
+		127AA3691BF1878D00E5A6D9 /* OpenDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenDelegate.m; sourceTree = "<group>"; };
+		127AA36C1BF187A500E5A6D9 /* OpenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenController.h; sourceTree = "<group>"; };
+		127AA36D1BF187A500E5A6D9 /* OpenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenController.m; sourceTree = "<group>"; };
+		127AA36F1BF187AF00E5A6D9 /* Open.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Open.xib; sourceTree = "<group>"; };
+		127AA3711BF1895E00E5A6D9 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		127AA3741BF1898A00E5A6D9 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
+		127AA3751BF1898A00E5A6D9 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
+		127AA3771BF1899900E5A6D9 /* PrefDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefDelegate.h; sourceTree = "<group>"; };
+		127AA3781BF1899900E5A6D9 /* PrefDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefDelegate.m; sourceTree = "<group>"; };
+		127AA37A1BF18CCB00E5A6D9 /* ReleaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseDelegate.h; sourceTree = "<group>"; };
+		127AA37B1BF18CCB00E5A6D9 /* ReleaseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseDelegate.m; sourceTree = "<group>"; };
+		127AA37E1BF18CE600E5A6D9 /* ReleaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseController.h; sourceTree = "<group>"; };
+		127AA37F1BF18CE600E5A6D9 /* ReleaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseController.m; sourceTree = "<group>"; };
+		127AA3811BF18CF200E5A6D9 /* Release Notes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Release Notes.xib"; sourceTree = "<group>"; };
 		9880C00A183AF04300B515A0 /* Quit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Quit.xib; sourceTree = "<group>"; };
 		9880C00C183AF14100B515A0 /* QuitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuitController.h; sourceTree = "<group>"; };
 		9880C00D183AF14100B515A0 /* QuitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitController.m; sourceTree = "<group>"; };
@@ -155,6 +179,42 @@
 				12737F2F1BAF71A7005B5942 /* DarkController.m */,
 			);
 			name = "Dark Mode";
+			sourceTree = "<group>";
+		};
+		127AA36B1BF1879200E5A6D9 /* Open */ = {
+			isa = PBXGroup;
+			children = (
+				127AA3681BF1878D00E5A6D9 /* OpenDelegate.h */,
+				127AA3691BF1878D00E5A6D9 /* OpenDelegate.m */,
+				127AA36F1BF187AF00E5A6D9 /* Open.xib */,
+				127AA36C1BF187A500E5A6D9 /* OpenController.h */,
+				127AA36D1BF187A500E5A6D9 /* OpenController.m */,
+			);
+			name = Open;
+			sourceTree = "<group>";
+		};
+		127AA3731BF1896C00E5A6D9 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				127AA3771BF1899900E5A6D9 /* PrefDelegate.h */,
+				127AA3781BF1899900E5A6D9 /* PrefDelegate.m */,
+				127AA3711BF1895E00E5A6D9 /* Preferences.xib */,
+				127AA3741BF1898A00E5A6D9 /* PrefController.h */,
+				127AA3751BF1898A00E5A6D9 /* PrefController.m */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		127AA37D1BF18CD300E5A6D9 /* Release Notes */ = {
+			isa = PBXGroup;
+			children = (
+				127AA37A1BF18CCB00E5A6D9 /* ReleaseDelegate.h */,
+				127AA37B1BF18CCB00E5A6D9 /* ReleaseDelegate.m */,
+				127AA3811BF18CF200E5A6D9 /* Release Notes.xib */,
+				127AA37E1BF18CE600E5A6D9 /* ReleaseController.h */,
+				127AA37F1BF18CE600E5A6D9 /* ReleaseController.m */,
+			);
+			name = "Release Notes";
 			sourceTree = "<group>";
 		};
 		9880C012183AF50D00B515A0 /* Quit */ = {
@@ -240,6 +300,9 @@
 				98C8CD121823462B00AE3F4E /* AppDelegate.h */,
 				98C8CD131823462B00AE3F4E /* AppDelegate.m */,
 				98C8CD151823462B00AE3F4E /* MainMenu.xib */,
+				127AA37D1BF18CD300E5A6D9 /* Release Notes */,
+				127AA3731BF1896C00E5A6D9 /* Preferences */,
+				127AA36B1BF1879200E5A6D9 /* Open */,
 				12196D781BEC46210082059E /* Save */,
 				12737F1E1BAF6F13005B5942 /* Dark Mode */,
 				9880C013183AF55100B515A0 /* Help */,
@@ -372,10 +435,13 @@
 				120841D21ADCA51100C3598A /* Help.xib in Resources */,
 				98C8CD191823462B00AE3F4E /* Images.xcassets in Resources */,
 				12737F271BAF7138005B5942 /* Dark.xib in Resources */,
+				127AA3701BF187AF00E5A6D9 /* Open.xib in Resources */,
 				98C8CD111823462B00AE3F4E /* Credits.rtf in Resources */,
 				12196D7D1BEC46430082059E /* Save.xib in Resources */,
 				1237CC211B69A0FA000EA2C7 /* icon.icns in Resources */,
 				98C8CD351823468F00AE3F4E /* Downloads.xib in Resources */,
+				127AA3821BF18CF200E5A6D9 /* Release Notes.xib in Resources */,
+				127AA3721BF1895E00E5A6D9 /* Preferences.xib in Resources */,
 				98C8CD171823462B00AE3F4E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,16 +462,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C8CD141823462B00AE3F4E /* AppDelegate.m in Sources */,
+				127AA3791BF1899900E5A6D9 /* PrefDelegate.m in Sources */,
 				12737F301BAF71A7005B5942 /* DarkController.m in Sources */,
+				127AA3801BF18CE600E5A6D9 /* ReleaseController.m in Sources */,
 				98817DB618287F0D00CC13E0 /* HelpController.m in Sources */,
 				12737F2D1BAF7165005B5942 /* ThingController.m in Sources */,
 				98817DB918287F2C00CC13E0 /* PageController.m in Sources */,
 				98C8CD0D1823462B00AE3F4E /* main.m in Sources */,
 				9880C00E183AF14100B515A0 /* QuitController.m in Sources */,
+				127AA36E1BF187A500E5A6D9 /* OpenController.m in Sources */,
+				127AA3761BF1898A00E5A6D9 /* PrefController.m in Sources */,
 				12196D771BEC46080082059E /* WindowController.m in Sources */,
 				98C8CD381823469B00AE3F4E /* DownloadsController.m in Sources */,
 				98C8CD3B182346A800AE3F4E /* AppController.m in Sources */,
 				12196D7B1BEC46380082059E /* SaveController.m in Sources */,
+				127AA37C1BF18CCB00E5A6D9 /* ReleaseDelegate.m in Sources */,
+				127AA36A1BF1878D00E5A6D9 /* OpenDelegate.m in Sources */,
 				9880C011183AF17100B515A0 /* QuitDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

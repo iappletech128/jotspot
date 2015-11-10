@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -32,7 +32,7 @@
                                     <items>
                                         <menuItem title="More settings..." keyEquivalent="," id="Fkd-AE-CzZ">
                                             <connections>
-                                                <action selector="orderFront:" target="bEB-bI-PoY" id="k8n-fa-OUp"/>
+                                                <action selector="showPref:" target="1UV-Zg-WdU" id="KTK-of-nQv"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Show Toolbar" id="viR-cf-oTu">
@@ -87,7 +87,7 @@
                             </menuItem>
                             <menuItem title="Open" keyEquivalent="o" id="xxy-u4-dhc">
                                 <connections>
-                                    <action selector="orderFront:" target="oZP-ye-Qjd" id="uIQ-fp-Bff"/>
+                                    <action selector="showOpen:" target="L8q-wX-ogu" id="oDb-F0-6tH"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="79">
@@ -652,7 +652,7 @@
                             <menuItem title="Release Notes" id="PXT-Jg-W3v">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="orderFront:" target="hKs-Aa-W3S" id="Naz-uy-rTW"/>
+                                    <action selector="showRelease:" target="1WE-Y5-wB6" id="zn3-PP-cyO"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -819,7 +819,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="orderFront:" target="oZP-ye-Qjd" id="Jsh-cL-CSw"/>
+                            <action selector="showOpen:" target="L8q-wX-ogu" id="tSM-5H-Mfb"/>
                         </connections>
                     </button>
                 </subviews>
@@ -850,7 +850,7 @@
                     <toolbarItem reference="iPy-xL-UrD"/>
                 </defaultToolbarItems>
             </toolbar>
-            <point key="canvasLocation" x="184" y="245.5"/>
+            <point key="canvasLocation" x="319" y="320.5"/>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
@@ -863,114 +863,10 @@
         <customObject id="iTC-MS-CgL" customClass="AppController"/>
         <customObject id="Zss-wE-FUt" customClass="PageController"/>
         <customObject id="Bak-hK-TVL" customClass="QuitDelegate"/>
-        <customObject id="RT3-HV-m62" customClass="ThingController"/>
         <customObject id="cdM-Pt-C2Z" customClass="WindowController"/>
-        <window title="WANRING" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="czU-Qj-90r" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
-            <rect key="contentRect" x="213" y="1119" width="480" height="114"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-            <view key="contentView" id="LjS-X9-O9Q">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="114"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="b8L-97-pyJ">
-                        <rect key="frame" x="18" y="50" width="444" height="44"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="wVy-bJ-ifs">
-                            <font key="font" metaFont="system"/>
-                            <string key="title">Are you sure you want to do this? You will not be able to access anything in the top left menu bar until you show the icon again.</string>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <button verticalHuggingPriority="750" id="6a6-TM-eau">
-                        <rect key="frame" x="60" y="14" width="82" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UYo-k7-iY6">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                        </buttonCell>
-                        <connections>
-                            <action selector="performClose:" target="-1" id="hDo-ec-Ndo"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" id="hFM-co-0nW">
-                        <rect key="frame" x="331" y="14" width="91" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hyl-b4-Nvy">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="Preferences:" target="494" id="2o1-y1-cBi"/>
-                        </connections>
-                    </button>
-                </subviews>
-                <animations/>
-            </view>
-            <point key="canvasLocation" x="598" y="820"/>
-        </window>
-        <window title="Open" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="oZP-ye-Qjd">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="497" y="645" width="480" height="178"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-            <view key="contentView" id="nAn-2X-G0O">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="178"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <button verticalHuggingPriority="750" id="VZT-h6-Pql">
-                        <rect key="frame" x="259" y="13" width="82" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Got it!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aJ3-Eh-9Cw">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent" base64-UTF8="YES">
-DQ
-</string>
-                        </buttonCell>
-                        <connections>
-                            <action selector="performClose:" target="-1" id="9yv-Si-apP"/>
-                        </connections>
-                    </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Eoo-fE-2C2">
-                        <rect key="frame" x="18" y="56" width="444" height="102"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="fCk-2Y-UwM">
-                            <font key="font" metaFont="system"/>
-                            <string key="title">To open a document that you’ve saved from JotSpot all you need to do is follow these steps:
-1.	Find where that file is located
-2.	Open JotSpot
-3.	Drag that file into the text field of JotSpot and drop it when the green plus icon appears</string>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <button verticalHuggingPriority="750" id="XtF-BS-0DM">
-                        <rect key="frame" x="136" y="13" width="69" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Help" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lkp-Lt-lGG">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="video:" target="494" id="cfs-4m-Sex"/>
-                        </connections>
-                    </button>
-                </subviews>
-                <animations/>
-            </view>
-        </window>
+        <customObject id="L8q-wX-ogu" customClass="OpenDelegate"/>
+        <customObject id="1UV-Zg-WdU" customClass="PrefDelegate"/>
+        <customObject id="1WE-Y5-wB6" customClass="ReleaseDelegate"/>
         <menu id="cne-Ob-jUB">
             <items>
                 <menuItem title="Text field" id="VxY-DO-le0">
@@ -980,11 +876,7 @@ DQ
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="z3r-Vo-D3j"/>
-                <menuItem title="Open" keyEquivalent="o" id="PQj-gy-Ews">
-                    <connections>
-                        <action selector="orderFront:" target="oZP-ye-Qjd" id="D1f-AU-1mr"/>
-                    </connections>
-                </menuItem>
+                <menuItem title="Open" keyEquivalent="o" id="PQj-gy-Ews"/>
                 <menuItem title="Save" keyEquivalent="s" id="L1V-d2-f3g"/>
                 <menuItem isSeparatorItem="YES" id="bb5-LQ-kdk"/>
                 <menuItem title="Quit JotSpot" keyEquivalent="q" id="17D-n6-KB5">
@@ -995,98 +887,6 @@ DQ
             </items>
             <point key="canvasLocation" x="386" y="955.5"/>
         </menu>
-        <window title="Change Menu Icon" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Hed-hs-W1s">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" texturedBackground="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="339" y="634" width="480" height="179"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-            <view key="contentView" id="Dp0-8c-fEd">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="179"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="WKv-4O-LAl">
-                        <rect key="frame" x="18" y="20" width="444" height="139"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="xtG-rp-jZm">
-                            <font key="font" metaFont="system"/>
-                            <string key="title">Have you noticed the pen icon in the top menu bar of you Mac? Just follow the steps below to change it.
-1. Find an image (better if it has a transparent background)
-2. Go to Finder &gt; Go &gt; Go to folder
-3. Enter this address (only works if JotSpot is in the "Applications" folder): /Applications/JotSpot.app/Contents/Resources
-4. Name your image "pen.png"
-5. Drag your image into the "Resources" folder and click "Replace".</string>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                </subviews>
-                <animations/>
-            </view>
-            <contentBorderThickness minY="0.0"/>
-        </window>
-        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="bEB-bI-PoY">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="444" y="753" width="213" height="202"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-            <view key="contentView" wantsLayer="YES" id="TQy-A1-Zgu">
-                <rect key="frame" x="0.0" y="0.0" width="213" height="202"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <button id="lLB-Z0-oSI">
-                        <rect key="frame" x="54" y="114" width="105" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="check" title="Open at login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="iQR-gw-eC6">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="Preferences:" target="494" id="Gwd-3F-ykj"/>
-                        </connections>
-                    </button>
-                    <button id="dvZ-Wr-D3t">
-                        <rect key="frame" x="61" y="148" width="90" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="check" title="Dark Mode" bezelStyle="regularSquare" imagePosition="left" inset="2" id="mf4-xe-IwA">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="showDark:" target="RT3-HV-m62" id="u2Q-Sn-Mfx"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" id="fw1-My-Efm">
-                        <rect key="frame" x="40" y="66" width="133" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Hide dock icon" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UEt-Ob-8V3">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="orderFront:" target="czU-Qj-90r" id="XWS-EQ-xnF"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" id="2f1-Xj-qDF">
-                        <rect key="frame" x="28" y="25" width="156" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Change menu icon" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QKK-iT-b7r">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="orderFront:" target="Hed-hs-W1s" id="YbT-dC-fve"/>
-                        </connections>
-                    </button>
-                </subviews>
-                <animations/>
-            </view>
-            <point key="canvasLocation" x="559.5" y="628"/>
-        </window>
         <customView id="Ewt-wV-CtB">
             <rect key="frame" x="0.0" y="0.0" width="241" height="236"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -1189,34 +989,6 @@ DQ
             <animations/>
             <point key="canvasLocation" x="368.5" y="688"/>
         </customView>
-        <window title="Release Notes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="hKs-Aa-W3S">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="372" y="699" width="480" height="226"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-            <view key="contentView" id="ZWO-Rb-uB1">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="226"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="zyB-d1-JyP">
-                        <rect key="frame" x="18" y="19" width="444" height="187"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="OMt-4T-bPZ">
-                            <font key="font" metaFont="system"/>
-                            <string key="title">Version 1.1.8
-- New Document name placeholder added to Dark Mode
-- Save window bug fixes
-- Added Print button tool tip</string>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                </subviews>
-                <animations/>
-            </view>
-            <point key="canvasLocation" x="184" y="671"/>
-        </window>
     </objects>
     <resources>
         <image name="Cut-icon" width="256" height="256"/>
