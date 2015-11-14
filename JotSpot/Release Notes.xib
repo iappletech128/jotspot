@@ -24,13 +24,14 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNq-Iw-7cK">
                         <rect key="frame" x="18" y="19" width="444" height="187"/>
                         <animations/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="2p0-qf-XME">
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="2p0-qf-XME">
                             <font key="font" metaFont="system"/>
                             <string key="title">Version 1.1.8
 - New Document name placeholder added to Dark Mode
 - Save window bug fixes
 - Added Print button tool tip
-- Performance improvements on many of the secondary windows</string>
+- Performance improvements on many of the secondary windows
+- Got a suggestion? We're listening! You can now provide feedback under the Help menu.</string>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>

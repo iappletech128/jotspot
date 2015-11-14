@@ -643,6 +643,12 @@
                                     <action selector="Site:" target="494" id="BfU-Ss-0Z2"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Feedback" id="rnG-Jq-3Iy">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="feedback:" target="494" id="keP-dq-lms"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Help Window" id="cfq-nh-5zQ">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>

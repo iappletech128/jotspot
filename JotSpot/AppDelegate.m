@@ -78,16 +78,16 @@
     NSURL *myURL = [NSURL URLWithString:@"http://iap-software.webnode.com/products/jotspot-preferences/"];
     [[NSWorkspace sharedWorkspace] openURL:myURL];
 }
-- (IBAction)Update:(id)sender {
-    NSURL *myURL = [NSURL URLWithString:@"http://iap-software.webnode.com/products/jotspot-update-1-1-4/"];
-    [[NSWorkspace sharedWorkspace] openURL:myURL];
-}
 - (IBAction)rate:(id)sender {
     NSURL *myURL = [NSURL URLWithString:@"https://itunes.apple.com/us/app/jotspot/id1022477396?ls=1&mt=12"];
     [[NSWorkspace sharedWorkspace] openURL:myURL];
 }
 -(IBAction)video:(id)sender {
     NSURL *myURL = [NSURL URLWithString:@"https://www.youtube.com/watch?v=JTMVx87MeGQ"];
+    [[NSWorkspace sharedWorkspace] openURL:myURL];
+}
+-(IBAction)feedback:(id)sender {
+    NSURL *myURL = [NSURL URLWithString:@"https://docs.google.com/forms/d/1BrUXM95B7t84O7B3xGIV4xTIJf-IGgjiKH8Ta1_wQuI/viewform"];
     [[NSWorkspace sharedWorkspace] openURL:myURL];
 }
 
